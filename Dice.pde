@@ -1,4 +1,3 @@
-
 Die you;
 int sum = 0; //total number
 
@@ -22,7 +21,7 @@ void draw()
 	}
 	textSize(50);
 	fill(255,0,0);
-	text("T \n o \n t \n a \n l \n N \n U \n M",650 ,75); 
+	text("T \n o \n t \n a \n l \n N \n U \n M",650 ,70); 
 	text(":" + sum ,700 ,300);
 }
 
@@ -46,10 +45,7 @@ class Die
 	{
 		numDots = (int)(Math.random()*6 + 1);
 		myX = x;
-		myY = y;
-		a = 25; //position dots 25,10,40
-		b = 10; 
-		c = 40;
+		myY = y;	
 	}
 
 	void show()
@@ -61,42 +57,42 @@ class Die
 
 		if(numDots == 1)
 		{
-			ellipse(myX + a,myY + a,10,10); //ONE DICE
+			ellipse(myX + 25,myY + 25,10,10); //ONE DICE
 		}
 		else if(numDots == 2)
 		{
-			ellipse(myX + b,myY + b,10,10); //TWO DIE
-			ellipse(myX + c,myY + c,10,10);
+			ellipse(myX + 10,myY + 10,10,10); //TWO DIE
+			ellipse(myX + 40,myY + 40,10,10);
 		}
 		else if(numDots == 3)
 		{
-			ellipse(myX + b,myY + b,10,10); //THREE
-			ellipse(myX + a,myY + a,10,10);
-			ellipse(myX + c,myY + c,10,10);
+			ellipse(myX + 10,myY + 10,10,10); //THREE
+			ellipse(myX + 25,myY + 25,10,10);
+			ellipse(myX + 40,myY + 40,10,10);
 		}
 		else if(numDots == 4)
 		{
-			ellipse(myX + b,myY + b,10,10); //FOUR
-			ellipse(myX + b,myY + c,10,10);
-			ellipse(myX + c,myY + b,10,10);
-			ellipse(myX + c,myY + c,10,10);
+			ellipse(myX + 10,myY + 10,10,10); //FOUR
+			ellipse(myX + 10,myY + 40,10,10);
+			ellipse(myX + 40,myY + 10,10,10);
+			ellipse(myX + 40,myY + 40,10,10);
 		}
 		else if(numDots == 5)
 		{
-			ellipse(myX + b,myY + b,8,8); //FIVE
-			ellipse(myX + b,myY + c,8,8);
-			ellipse(myX + c,myY + b,8,8);
-			ellipse(myX + c,myY + c,8,8);
-			ellipse(myX + a,myY + a,8,8);
+			ellipse(myX + 10,myY + 10,8,8); //FIVE
+			ellipse(myX + 10,myY + 40,8,8);
+			ellipse(myX + 40,myY + 10,8,8);
+			ellipse(myX + 40,myY + 40,8,8);
+			ellipse(myX + 25,myY + 25,8,8);
 		}
 		else
 		{
-			ellipse(myX + b,myY + b,8,8); //SIX
-			ellipse(myX + b,myY + a,8,8);
-			ellipse(myX + b,myY + c,8,8);
-			ellipse(myX + c,myY + b,8,8);
-			ellipse(myX + c,myY + a,8,8);
-			ellipse(myX + c,myY + c,8,8);
+			ellipse(myX + 10,myY + 10,8,8); //SIX
+			ellipse(myX + 10,myY + 25,8,8);
+			ellipse(myX + 10,myY + 40,8,8);
+			ellipse(myX + 40,myY + 10,8,8);
+			ellipse(myX + 40,myY + 25,8,8);
+			ellipse(myX + 40,myY + 40,8,8);
 		}
 	}
 }
