@@ -33,14 +33,10 @@ void mousePressed()
 
 class Die
 {
-	int a;
-	int b;
-	int c;
 	int numDots;
 	int myX;
 	int myY;
 	
-
 	Die(int x, int y)
 	{
 		numDots = (int)(Math.random()*6 + 1);
