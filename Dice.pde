@@ -22,7 +22,7 @@ void draw()
 	}
 	textSize(50);
 	fill(255,0,0);
-	text("T \n o \n t \n a \n l \n N \n U \n M",650 ,50); 
+	text("T \n o \n t \n a \n l \n N \n U \n M",650 ,75); 
 	text(":" + sum ,700 ,300);
 }
 
